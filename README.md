@@ -1,4 +1,4 @@
-## Selenium Docker Test Congig
+## Selenium Docker Test Config
 
 #### [SOP]
 
@@ -6,16 +6,16 @@
 
 ##### 2).  Install docker images
 +  [Test a single browser at one time]
-  + docker run -d -p 4444:4444 --shm-size="2g" selenium/standalone-firefox
-  + docker run -d -p 4444:4444 --shm-size="2g" selenium/standalone-chrome
-  + docker run -d -p 4444:4444 --shm-size="2g" selenium/standalone-edge
+    + docker run -d -p 4444:4444 --shm-size="2g" selenium/standalone-firefox
+    + docker run -d -p 4444:4444 --shm-size="2g" selenium/standalone-chrome
+    + docker run -d -p 4444:4444 --shm-size="2g" selenium/standalone-edge
 
 +  [Test multiple browsers at the same time]
-  + docker pull selenium/hub
-  + docker pull selenium/node-chrome
-  + docker pull selenium/node-firefox
-  + docker pull selenium/node-edge
-  + docker compose up
+    + docker pull selenium/hub
+    + docker pull selenium/node-chrome
+    + docker pull selenium/node-firefox
+    + docker pull selenium/node-edge
+    + docker compose up
 
 ##### 3).  Open the browser
 + localhost:4444 (Selenium Grid)
