@@ -63,7 +63,6 @@ def Firefox():
     driver.find_element(By.XPATH, "//*[contains(text(), 'Get started free')]").click()
     time.sleep(10)
     driver.close()
-    driver.quit()
     print("TEST is DONE!!")
     
     
@@ -75,7 +74,7 @@ while True:
         Chrome()
     if flavor == "3":
         Firefox()
-    if flavor == "Q" or "q":
+    if flavor.lower() == "q":
         break
     else:
         continue
