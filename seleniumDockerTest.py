@@ -26,7 +26,7 @@ def Edge():
     time.sleep(10)
     driver.close()
     driver.quit()
-    print("TEST is DONE!!")
+    print("TEST is DONE!!\n")
     
 def Chrome():
     from selenium.webdriver.chrome.options import Options
@@ -45,7 +45,7 @@ def Chrome():
     time.sleep(10)
     driver.close()
     driver.quit()
-    print("TEST is DONE!!")
+    print("TEST is DONE!!\n")
 
 def Firefox():
     from selenium.webdriver.firefox.options import Options
@@ -62,8 +62,9 @@ def Firefox():
     time.sleep(5)
     driver.find_element(By.XPATH, "//*[contains(text(), 'Get started free')]").click()
     time.sleep(10)
-    driver.close()
-    print("TEST is DONE!!")
+    # driver.close()   # bug
+    driver.quit()
+    print("TEST is DONE!!\n")
     
     
 while True:
