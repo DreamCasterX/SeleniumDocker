@@ -22,3 +22,8 @@
 + localhost:7900 (noVNC) 
 
 ##### 4).  Run python test scripts 
+---
+#### [Note]
+- Default hub password is `secret`, if you want to change it, set the env variable in docker-compose.yml
+    - `SE_VNC_PASSWORD=xxx` = Set your own password
+    - `SE_VNC_NO_PASSWORD=1` = Don't prompt for password 
